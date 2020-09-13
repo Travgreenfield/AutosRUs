@@ -1,0 +1,45 @@
+*** MPG Regression ***
+
+- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset? -
+
+Both Vehicle Length and Ground Clearance demonstrated a highly significant chance of providing non-random variance to our MPG. Vehicle Weight showed to be a weak but noticeable indicator of non-random variance for MPG.
+
+
+- Is the slope of the linear model considered to be zero? Why or why not? -
+
+No. As demonstrated by the multi regression test run with Vehicle Length, Vehicle Weight, Spoiler Angle, and Ground Clearance, the r-squared outcome is 0.7 — indicating a non-zero slope.
+
+- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? -
+
+No. While there are a couple of significant variables, it only accounts for half of those included in the model. Additionally, a relatively non-zero intercept could indicate the presence of other, unobserved variables that are having a greater impact on the overall MPG.
+
+
+*** Suspension Coil Summary ***
+
+Mean - 1499.531
+Median - 1499.747
+Variance - 76.23459
+Standard deviation - 8.731242
+
+The variance of our MechaCar data (76.23459) falls within the determined requirement of 100 lbs/inch or less.
+
+*** Suspension Coil T-Test ***
+
+In using a one-sided t-test, comparing a sample size of 45 and utilizing a theoretical mean of 1500 pounds per inch, we unearthed a p-value of 0.98. Therefore, we do not have sufficient evidence to reject the null hypothesis and must state that the two means are statistically similar. 
+
+*** Continued Study Design ***
+
+The majority of our initial analysis has been focused on MPG. What I would be interested in is consumer data related to how much MPG is factored into a potential buyer's calculous as compared to other factors like price. More specifically, I'd be interested in seeing if there are diminishing returns on MPG and whether price or number of seats is a better indicator of selling power.
+
+Hypothesis: Starting at 35 MPG, an increase in fuel efficiency continues to positively impact the likelihood that car model is sold.
+
+Null Hypothesis: Starting at 35 MPG, an increase in fuel efficiency has no impact on the likelihood that a car model will be purchased.
+
+Data Needed: Consumer data broken down by...
+
+Car Model
+MPG
+Price
+Seating Options
+Optional features as a Yes/No (A/C, Power Windows, Touch Screen... etc.)
+
